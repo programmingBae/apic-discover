@@ -6,7 +6,7 @@ env:
   API_HOST: apps.676a85b33c8fc165d0f1c1c7.ocp.techzone.ibm.com
   PLATFORM_API_PREFIX: platform-api
   PROVIDER_ORG: bi-demo
-  API_FILES: ./openapi.yaml, ./openapi2.yaml, ./openapi3.yaml
+  API_FILES: openapi.yaml, openapi2.yaml, openapi3.yaml
 
 jobs:
   run-discovery:
