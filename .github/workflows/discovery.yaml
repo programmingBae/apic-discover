@@ -6,6 +6,7 @@ env:
   API_HOST: apps.676a85b33c8fc165d0f1c1c7.ocp.techzone.ibm.com
   PLATFORM_API_PREFIX: apim-demo-mgmt-admin-tools
   PROVIDER_ORG: bi-demo
+  INSECURE_SKIP_TLS_VERIFY: True
   API_FILES: openapi.yaml 
 
 jobs:
@@ -21,7 +22,6 @@ jobs:
       id: discover-apis
       with:
         api_host: ${{ env.API_HOST }}
-        insecure_skip_tls_verify: true
         platform_api_prefix: ${{ env.PLATFORM_API_PREFIX }}
         provider_org: ${{ env.PROVIDER_ORG }}
         api_key: ${{ secrets.apicApikey }}
