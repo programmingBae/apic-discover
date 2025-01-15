@@ -4,7 +4,6 @@ on: [pull_request, workflow_dispatch, push]
 
 env:
   API_HOST: ap-southeast-b.apiconnect.automation.ibm.com
-  PLATFORM_API_PREFIX: api-manager
   PROVIDER_ORG: test
   API_FILES: openapi2.yaml 
 
