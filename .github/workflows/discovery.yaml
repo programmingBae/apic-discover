@@ -4,7 +4,6 @@ on: [pull_request, workflow_dispatch, push]
 
 env:
   API_HOST: ap-southeast-a.apiconnect.automation.ibm.com
-  PLATFORM_API_PREFIX: api-manager
   PROVIDER_ORG: techsales
   INSECURE_SKIP_TLS_VERIFY: True
   API_FILES: ./*.yaml
