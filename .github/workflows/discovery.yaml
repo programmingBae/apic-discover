@@ -23,7 +23,7 @@ jobs:
         insecure_skip_tls_verify: true
         platform_api_prefix: ${{ env.PLATFORM_API_PREFIX }}
         provider_org: ${{ env.PROVIDER_ORG }}
-        api_key: ${{ secrets.Apikeys }}
+        api_key: ${{ secrets.Apikey }}
         api_files: ${{ env.API_FILES }}
         api_folders: ${{ env.API_FOLDERS }}
         resync_check: ${{ true }}
