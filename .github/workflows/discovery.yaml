@@ -3,8 +3,9 @@ name: Sync Discovered API with APIConnect
 on: [pull_request, workflow_dispatch, push]
 
 env:
-  API_HOST: ap-southeast-a.apiconnect.automation.ibm.com
-  PROVIDER_ORG: techsales
+  API_HOST: ap-southeast-b.apiconnect.automation.ibm.com
+  PROVIDER_ORG: test
+  PLATFORM_API_PREFIX: api-manager
   API_FILES: openapi.yaml 
 
 jobs:
@@ -23,7 +24,7 @@ jobs:
         insecure_skip_tls_verify: true
         platform_api_prefix: ${{ env.PLATFORM_API_PREFIX }}
         provider_org: ${{ env.PROVIDER_ORG }}
-        api_key: ${{ secrets.apicApikey }}
+        api_key: ${{ secrets.Apikey }}
         if: env.API_FILES
         api_files: ${{ env.API_FILES }}
         else if: env.API_FOLDERS
