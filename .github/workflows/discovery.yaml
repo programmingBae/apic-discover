@@ -3,9 +3,8 @@ name: Sync Discovered API with APIConnect
 on: [pull_request, workflow_dispatch, push]
 
 env:
-  API_HOST: apps.676a85b33c8fc165d0f1c1c7.ocp.techzone.ibm.com
-  PLATFORM_API_PREFIX: apim-demo-mgmt-api-manager-tools
-  PROVIDER_ORG: bi-demo
+  API_HOST: ap-southeast-a.apiconnect.automation.ibm.com
+  PROVIDER_ORG: techsales
   API_FILES: openapi.yaml 
 
 jobs:
