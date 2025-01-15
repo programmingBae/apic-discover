@@ -5,7 +5,7 @@ on: [pull_request, workflow_dispatch, push]
 env:
   API_HOST: ap-southeast-b.apiconnect.automation.ibm.com
   PROVIDER_ORG: test
-  API_FILES: openapi.yaml 
+  API_FILES: openapi2.yaml 
 
 jobs:
   run-discovery:
